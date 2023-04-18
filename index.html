@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="todoinput">
+    <input type="text" name="" id="todoinput" placeholder="Write todo here..."/>
+    <button id="todosubmit" onclick="TodoSubmit()">Add New</button>
+    </div>
+    <div class="filterBtn">
+      <button onclick="FilterTodo('all', this)" class="active">All</button>
+      <button onclick="FilterTodo('pending', this)">Pending</button>
+      <button onclick="FilterTodo('complete', this)">Complete</button>
+    </div>
+    <div class="todooutput">
+      <div class="title">
+        <span><i class="fa fa-list"></i> <span id="todoTitle"></span></span> <span id="totalTodo"></span>
+      </div>
+    <div id="showtodo">
+      
+    </div>
+    </div>
+<script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
